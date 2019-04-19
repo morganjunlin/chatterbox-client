@@ -2,10 +2,10 @@ var App = {
 
   $spinner: $('.spinner img'),
 
-  username: 'anonymous',
+  username: 'Mel Brooks',
 
   initialize: function() {
-    App.username = window.location.search.substr(10);
+    // App.username = window.location.search.substr(10);
 
     FormView.initialize();
     RoomsView.initialize();

@@ -88,3 +88,16 @@ form input[type=text] {
     background-color: #0090da;
 }
 
+.username {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+.message {
+    width: 400px;
+}
+
+.text {
+  float: left;
+    width: 400px;
+}

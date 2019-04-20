@@ -2,10 +2,10 @@ var App = {
 
   $spinner: $('.spinner img'),
 
-  username: 'Mel Brooks',
+  username: '&#128523;',
 
   initialize: function() {
-    // App.username = window.location.search.substr(10);
+    App.username = window.location.search.substring(10);
 
     FormView.initialize();
     RoomsView.initialize();
@@ -20,10 +20,11 @@ var App = {
   fetch: function(callback = ()=>{}) {
     Parse.readAll((data) => {
       // examine the response from the server request:
-      console.log(data);
+      // console.log(data);
 
       callback();
     });
+
   },
 
   startSpinner: function() {

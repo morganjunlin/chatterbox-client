@@ -1,3 +1,6 @@
+var allMessages;
+var currentRooms = {};
+var allRooms = [];
 var FormView = {
 
   $form: $('form'),
@@ -9,7 +12,7 @@ var FormView = {
   handleSubmit: function(event) {
     // Stop the browser from submitting the form
     event.preventDefault();
-    
+    Parse.create($('#message').val(), () => console.log('this has been successful'));
     console.log('click!');
   },
 

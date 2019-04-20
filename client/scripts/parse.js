@@ -9,8 +9,8 @@ var Parse = {
       type: 'POST',
       data: JSON.stringify ({ 
         username: App.username,
-        text: Messages.message,
-        roomname: Rooms.room
+        text: message,
+        roomname: $('option:selected').val()
        }),
       contentType: 'application/json',
       success: successCB,

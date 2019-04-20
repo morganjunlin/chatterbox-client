@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Welcome to Twiddler</title>
     <link rel="stylesheet" href="client/styles/styles.css">
+    <script src="client/scripts/timeago.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/underscore/underscore.js"></script>
     <script>
@@ -48,7 +49,11 @@
     <script src="client/scripts/messagesView.js"></script>
     <script src="client/scripts/app.js"></script>
     <script>
-      $(() => App.initialize());
+      $(document).ready(function() { 
+        App.initialize();
+        // $('.timeago').timeago();
+      });
+      // 
     </script>
   </body>
 </html>

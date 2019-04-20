@@ -26,6 +26,7 @@ var MessagesView = {
 
   },
   renderMessage: function(message) {
+    // $('.timeago').timeago();
     if (!message.username) {
       message.username = 'anonymous';
     } if (!message.text) {
@@ -33,10 +34,14 @@ var MessagesView = {
     } if (message.text.includes('>')){
       message.text = 'nice try'
     }
+    message.pic = randomPics[Math.floor(Math.random()*4)];
+    // let time = $.timeago(message.createdAt);
+    // console.log(time);
+    // message.createdAt = time;
     let messageBlock = _.template(`
       <div class="message">
-        <span class="username"><%= username %>: <%= createdAt %></span>
-        <span class="text"><%= text %></span>
+        <div class="username"><img src="profile-pics/<%= pic %>" height="60px" class="profilePic"><%= username %>: <%= createdAt %></div>
+        <div class="text"><%= text %></div>
       </div>
     `);
     MessagesView.$chats.append(messageBlock(message))

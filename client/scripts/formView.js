@@ -1,6 +1,7 @@
 var allMessages;
 var currentRooms = {};
 var allRooms = [];
+var randomPics = ['01.jpg', '02.jpg', '03.jpg', '04.jpg'];
 var FormView = {
 
   $form: $('form'),

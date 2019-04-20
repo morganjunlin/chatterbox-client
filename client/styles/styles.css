@@ -59,15 +59,19 @@ form input[type=text] {
     padding: 5px;
 }
 
-.chat {
+#chats {
     padding: 5px;
+    width: 610px;
+    margin: auto;
+    
     margin-bottom: 5px;
-    background-color: #eee;
+    /* position: center; */
+    background-color: rgb(53, 190, 184);
 }
 
-.chat .username {
+/* .chat .username {
     font-weight: 800;
-}
+} */
 
 .chat:hover {
     background-color: #ddd;
@@ -89,15 +93,39 @@ form input[type=text] {
 }
 
 .username {
-    color: #ff4444;
+    color: #555555;
     font-weight: bold;
 }
 
 .message {
-    width: 400px;
+  background-color: #ffffff;
+  border:10px solid #ffffff;
+  border-radius:10px;
+  margin: 5px 0px 5px 0px;
+
+  width: 590px;
+  height:100px;
+  word-wrap: wrap;
+  
+}
+.message:hover {
+  background-color: #e4e4e4;
+  border:10px solid #e4e4e4;
+  border-radius:10px;
 }
 
 .text {
   float: left;
-    width: 400px;
+  /* width: 500px; */
+  font: 300 24px Helvetica, Arial, sans-serif;
+  /* display: flex;    */
+  word-break: break-all;
+}
+
+.profilePic {
+  border-radius: 50%;
+  line-height: 50px;
+  vertical-align: top;
+  width: 70px;
+  height: 70px;
 }

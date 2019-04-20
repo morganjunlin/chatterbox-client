@@ -6,11 +6,11 @@ body {
 }
 
 #main, #chats {
-    width: 500px;
+    width: 580px;
     margin: auto;
     text-align: left;
     background: white;
-    padding: 50px 60px;
+    padding: 10px 20px;
     border: solid #ddd;
     border-width: 0 1px 1px 1px;
 }
@@ -63,6 +63,8 @@ form input[type=text] {
     padding: 5px;
     width: 610px;
     margin: auto;
+    height: 500px;
+    overflow: auto;
     
     margin-bottom: 5px;
     /* position: center; */
@@ -92,40 +94,65 @@ form input[type=text] {
     background-color: #0090da;
 }
 
+.msg {
+    width: 510px;
+}
 .username {
+    font: 14px Helvetica, Arial, sans-serif;
     color: #555555;
-    font-weight: bold;
+    /* font-weight: bold; */
+}
+
+.username a {
+    font: 14px Helvetica, Arial, sans-serif;
+    color: #222222;
+    font-weight: bold; 
+    text-decoration: none;
+}
+.username a:hover {
+    font: 14px Helvetica, Arial, sans-serif;
+    color: #222222;
+    font-weight: bold; 
+    text-decoration: underline;
 }
 
 .message {
   background-color: #ffffff;
-  border:10px solid #ffffff;
-  border-radius:10px;
-  margin: 5px 0px 5px 0px;
+  border:5px solid #ffffff;
+  /* border-radius:10px; */
+  margin: 1px 0px 1px 0px;
 
-  width: 590px;
-  height:100px;
+  width: 600px;
+  /* height:50px; */
   word-wrap: wrap;
   
 }
 .message:hover {
   background-color: #e4e4e4;
-  border:10px solid #e4e4e4;
-  border-radius:10px;
+  border:5px solid #e4e4e4;
+  /* border-radius:10px; */
 }
 
 .text {
+
   float: left;
   /* width: 500px; */
-  font: 300 24px Helvetica, Arial, sans-serif;
+  font: 300 16px Helvetica, Arial, sans-serif;
   /* display: flex;    */
-  word-break: break-all;
+  /* word-break: break-all; */
 }
 
 .profilePic {
-  border-radius: 50%;
-  line-height: 50px;
+  line-height: 30px;
   vertical-align: top;
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
 }
+
+.profilePic img {
+    border-radius: 50%;
+}
+section {
+    display: inline-block;
+  
+  }

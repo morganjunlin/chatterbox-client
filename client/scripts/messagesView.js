@@ -34,14 +34,15 @@ var MessagesView = {
     } if (message.text.includes('>')){
       message.text = 'nice try'
     }
-    message.pic = randomPics[Math.floor(Math.random()*4)];
-    // let time = $.timeago(message.createdAt);
+    message.pic = randomPics[Math.floor(Math.random()*randomPics.length)];
+    let time = $.timeago(message.createdAt);
     // console.log(time);
-    // message.createdAt = time;
+    message.createdAt = time;
     let messageBlock = _.template(`
       <div class="message">
-        <div class="username"><img src="profile-pics/<%= pic %>" height="60px" class="profilePic"><%= username %>: <%= createdAt %></div>
-        <div class="text"><%= text %></div>
+        <section class="profilePic"><img src="profile-pics/<%= pic %>" height="100%"></section>
+        <section class="msg"><div class="username"><a href=""><%= username %></a> · <%= createdAt %></div>
+        <div class="text"><%= text %></div></section>
       </div>
     `);
     MessagesView.$chats.append(messageBlock(message))

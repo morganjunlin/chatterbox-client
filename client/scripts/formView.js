@@ -13,8 +13,8 @@ var FormView = {
   handleSubmit: function(event) {
     // Stop the browser from submitting the form
     event.preventDefault();
-    Parse.create($('#message').val(), () => console.log('this has been successful'));
-    console.log('click!');
+    Parse.create($('#message').val(), () => $('#message').val(''));
+    // console.log('click!');
   },
 
   setStatus: function(active) {

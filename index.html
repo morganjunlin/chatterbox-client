@@ -27,9 +27,13 @@
       <div class="spinner"><img src="client/images/spiffygif_46x46.gif"></div>
       <div id="rooms">
         Room:
-        <select>
+        <select id="target">
         </select>
-        <button>Add Room</button>
+
+        <input type="text" name="roomName" id="roomName"/>
+        
+        <button id="addRoom">add room</button>
+
       </div>
       <form action="#" id="send" method="post">
         <input type="text" name="message" id="message"/>
@@ -51,6 +55,7 @@
     <script>
       $(document).ready(function() { 
         App.initialize();
+
         // $('.timeago').timeago();
       });
       // 

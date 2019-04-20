@@ -10,6 +10,7 @@ var Parse = {
       data: JSON.stringify ({ 
         username: App.username,
         text: message,
+        // roomname: 'secret room'
         roomname: $('option:selected').val()
        }),
       contentType: 'application/json',
@@ -32,5 +33,6 @@ var Parse = {
       }
     });
   }
+
 
 };
